@@ -4,7 +4,7 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '5eff0e854b7a55a95084e52fa4a1ae43'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:tiger@localhost/testdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:tiger@localhost/invoicedb'
 db= SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 
